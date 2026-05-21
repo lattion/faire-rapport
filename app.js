@@ -120,7 +120,7 @@ btnDownload.addEventListener('click', () => {
     // Déclencheur du téléchargement natif du navigateur
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = `${course}_${tp.toUpperCase()}.pdf`;
+    link.download = `${tp.toUpperCase()}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
