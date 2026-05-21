@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faire Rapport - Téléchargement de TP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Faire-Rapport.ch</h1>
+        <p>Sélectionne ton cours pour obtenir le TP et préparer ton rapport</p>
+      </header>
+
+      <main class="form-card">
+        <div class="input-group">
+          <label for="select-year">1. Choisir l'année académique</label>
+          <select id="select-year">
+            <option value="">-- Sélectionner une année --</option>
+            <option value="annee1">1ère Année (Bachelor)</option>
+            <option value="annee2">2ème Année (Bachelor)</option>
+            <option value="annee3">3ème Année (Bachelor)</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="select-course">2. Choisir le cours</label>
+          <select id="select-course" disabled>
+            <option value="">-- Choisis d'abord l'année --</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="select-tp">3. Numéro du TP</label>
+          <select id="select-tp" disabled>
+            <option value="">-- Choisis d'abord le cours --</option>
+          </select>
+        </div>
+
+        <div class="actions-container">
+          <button id="btn-download" class="btn primary" disabled>
+            Télécharger le PDF
+          </button>
+
+          <button id="btn-ai" class="btn secondary" disabled>
+            ✨ Prompt IA (Reformuler)
+          </button>
+        </div>
+
+        <div id="notification" class="hidden">
+          Prompt copié ! Colle-le dans ChatGPT ou Claude.
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>© 2026 Faire-Rapport.ch - Tous droits réservés.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
