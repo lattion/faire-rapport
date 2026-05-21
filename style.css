@@ -1,8 +1,12 @@
 body {
-    background-image: url('img/faire-rapport.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* Motif mosaïque 1 carré sur 2 avec une petite icône */
+    background-color: white;
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 32px, rgba(0,0,0,0.03) 32px, rgba(0,0,0,0.03) 64px),
+                      repeating-linear-gradient(0deg, transparent, transparent 32px, rgba(0,0,0,0.03) 32px, rgba(0,0,0,0.03) 64px),
+                      url('img/faire-rapport.png');
+    background-size: 64px 64px, 64px 64px, 32px 32px;
+    background-position: 0 0, 0 0, 0 0;
+    background-repeat: repeat;
 }
 :root {
     --bg-dark: #0f172a;
