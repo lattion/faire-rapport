@@ -52,9 +52,15 @@ header h1 {
     letter-spacing: -1px;
 }
 
-header p {
-    color: var(--text-muted);
+.subtitle-bg {
+    display: inline-block;
+    background: var(--card-bg);
+    color: var(--text-main);
+    padding: 12px 24px;
+    border-radius: 12px;
     margin-top: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
 }
 
 .form-card {
